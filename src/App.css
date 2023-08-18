@@ -64,12 +64,6 @@ ul.features {
   font-size: 20px;
 }
 
-.btn {
-  padding: 10px;
-  width: 150px;
-  box-shadow: 3px  4px 0 #323131;;
-  }
-
 .link {
   color: var(--primary-color);
   padding-left: 20px;
@@ -87,12 +81,12 @@ ul.features {
   top: 10px;
   background: var(--primary-color);
   border-color: var(--primary-color);
-  
+   padding: 10px;
+  width: 150px;
+  box-shadow: 3px  4px 0 #4141416d;
+  border-radius: 5px;
 }
 
-.bar {
-  position: fixed;
-}
 .card {
   padding: 30px;
   border: solid 5px ;
@@ -105,7 +99,7 @@ ul.features {
   text-align: right;
 padding: 20px;
   left: 300px;
-  margin-top: 20px;
+ 
 }
 
 .today {
