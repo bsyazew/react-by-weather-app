@@ -111,8 +111,9 @@ ul.features {
 }
 .weather-forecast {
   position: relative;
-  left: 30px;
-  margin-top: -150px;
+  bottom: 50px;
+  margin-top: -30px;
+  text-align: center;
 }
 
 .forecast-dates {
