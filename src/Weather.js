@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
+
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -10,7 +12,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       city: response.data.name,
-      date: "Monday 23:22",
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       iconUrl: "https://openweathermap.org/img/wn/10d@2x.png",
     });
@@ -29,7 +31,7 @@ export default function Weather(props) {
                     className="form-control"
                     id="city-input"
                     placeholder="Enter City"
-                    autocomplete="off"
+                    autoComplete="off"
                     autoFocus="on"
                   />
                   <div className="col-3">
@@ -46,7 +48,7 @@ export default function Weather(props) {
         <div className="city" id="displayed-city">
           {weatherData.city}
         </div>
-        <div className="today">{weatherData.date}</div>
+        <div className="today"><FormattedDate date={weatherData.date} /></div>
         <div className="today text-capitalize" id="description">
           {weatherData.descritption}
         </div>
@@ -83,7 +85,7 @@ export default function Weather(props) {
       </div>
     );
   } else {
-    const apiKey = "b2d9fa1f2b35557e4615dd5fab218834";
+    const apiKey = "3c949ba49d38be2487ee278e0d2d4059";
 
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
