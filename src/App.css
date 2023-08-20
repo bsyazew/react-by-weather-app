@@ -46,10 +46,7 @@ canvas {
  
 }
 
-#forecast-icon {
-  width: 60px;
-  text-align: center;
-}
+
 
 ul.features {
   list-style: none;
@@ -63,7 +60,7 @@ ul.features {
   list-style: none;
   display: inline-block;
   font-size: 20px;
-  padding: 0 0 20px;
+  padding: 0 0 5px;
 }
 
 .form-control {
@@ -108,8 +105,13 @@ ul.features {
   left: 300px;
 }
 
-
+#forecast-icon {
+  width: 60px;
+  text-align: center;
+}
 .weather-forecast {
+  position: relative;
+  left: 30px;
   margin-top: -150px;
 }
 
