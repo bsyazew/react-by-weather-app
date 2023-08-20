@@ -27,11 +27,11 @@ export default function WeatherInfo(props) {
           </ul>
           <ul id="temp">
             <li>
+              <div className="todays-weather-description">
+                {props.data.description}
+              </div>
               <div>
-                <WeatherIcon
-                  code={props.data.icon}
-                  alt={props.data.description}
-                />
+                <WeatherIcon code={props.data.icon} />
               </div>
 
               <span className="degrees" id="todays-temperature">

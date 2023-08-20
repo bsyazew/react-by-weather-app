@@ -1,6 +1,5 @@
 :root {
-  --primary-color: #F09AE8
-
+  --primary-color: #f09ae8;
 }
 
 body {
@@ -23,17 +22,27 @@ body {
   bottom: 190px;
   left: 90px;
   font-size: 20px;
- 
 }
 
+.today {
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 10px;
+}
 
 .todays-weather-description {
   position: relative;
-  bottom: 50px;
-  right: 20px;
-  font-size: 50px;
-  line-height: 10px;
-  width: 120px;
+  bottom: 120px;
+  right: -9px;
+  font-size: 20px;
+   text-transform: capitalize;
+  
+}
+
+canvas {
+  position:relative;
+  bottom: 66px;
+  right: -10px;
 }
 
 #forecast-icon {
@@ -41,12 +50,10 @@ body {
   text-align: center;
 }
 
-
-
 ul.features {
   list-style: none;
   position: relative;
- 
+
   left: 300px;
   font-size: 17px;
 }
@@ -67,7 +74,6 @@ ul.features {
 .link {
   color: var(--primary-color);
   padding-left: 20px;
-
 }
 
 .weather-app-wrapper {
@@ -81,15 +87,15 @@ ul.features {
   top: 10px;
   background: var(--primary-color);
   border-color: var(--primary-color);
-   padding: 10px;
+  padding: 10px;
   width: 150px;
-  box-shadow: 3px  4px 0 #4141416d;
+  box-shadow: 3px 4px 0 #4141416d;
   border-radius: 5px;
 }
 
 .card {
   padding: 30px;
-  border: solid 5px ;
+  border: solid 5px;
   border-color: var(--primary-color);
   border-radius: 50px;
 }
@@ -97,39 +103,31 @@ ul.features {
 .city {
   font-size: 40px;
   text-align: right;
-padding: 20px;
+  padding: 20px;
   left: 300px;
- 
 }
 
-.today {
-  font-size: 20px;
-  text-transform: capitalize;
-  padding: 10px;
-}
 
 .weather-forecast {
   margin-top: -150px;
 }
 
 .forecast-dates {
- color: var(--primary-color);
-  text-shadow:  0.3px  0.3px 0 #020202;
+  color: var(--primary-color);
+  text-shadow: 0.3px 0.3px 0 #020202;
 }
 
 .forecast-temp-min {
- color:var(--primary-color);
- font-size: smaller;
- text-shadow:  0.3px  0.3px 0 #020202;
- 
+  color: var(--primary-color);
+  font-size: smaller;
+  text-shadow: 0.3px 0.3px 0 #020202;
 }
 
 .forecast-temp-max {
-   font-size: smaller;
+  font-size: smaller;
 }
 
 .col-2 {
   font-size: 20px;
   text-align: center;
 }
-
