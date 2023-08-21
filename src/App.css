@@ -104,17 +104,18 @@ ul.features {
   padding: 20px;
   left: 300px;
 }
-
-#forecast-icon {
-  width: 60px;
-  text-align: center;
-}
 .weather-forecast {
   position: relative;
   bottom: 50px;
   margin-top: -30px;
   text-align: center;
 }
+
+#forecast-icon {
+  width: 60px;
+  text-align: center;
+}
+
 
 .forecast-dates {
   color: var(--primary-color);
