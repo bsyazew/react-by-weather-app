@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #f09ae8;
+  --primary-color: #424649;
   --body-font: "Secular One", sans-serif;
 
 }
@@ -90,9 +90,7 @@ ul.features {
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
- border: solid 5px;
-  border-color: var(--primary-color);
-  border-radius: 50px;
+
 }
 
 .btn-1 {
@@ -108,8 +106,10 @@ ul.features {
    font-family: var(--body-font);
 }
 
-.card-body {
- border: none;
+.card {
+  border: solid 5px;
+  border-color: var(--primary-color);
+  border-radius: 50px;
   
 }
 
@@ -148,7 +148,7 @@ ul.features {
 }
 
 .forecast-temp-min {
-  color: var(--primary-color);
+  color: #858d92d2;
   font-size: smaller;
   text-shadow: 0.3px 0.3px 0 #020202;
 }
