@@ -14,6 +14,7 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="footer">
       <a
         rel="noreferrer"
         href="https://github.com/bsyazew/react-by-weather-app"
@@ -23,6 +24,7 @@ function App() {
         Open-source code
       </a>
       , by Bethlehem Yazew
+    </div>
     </div>
   );
 }

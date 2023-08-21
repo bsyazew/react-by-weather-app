@@ -1,8 +1,7 @@
 :root {
   --primary-color: #424649;
-  --secondary-color:  #858d92d2;
+  --secondary-color: #858d92d2;
   --body-font: "Secular One", sans-serif;
-
 }
 
 .body {
@@ -11,7 +10,6 @@
 
 .container {
   max-width: 700px;
-  
 }
 
 .degrees {
@@ -27,7 +25,7 @@
   bottom: 190px;
   left: 90px;
   font-size: 20px;
-    font-family: var(--body-font);
+  font-family: var(--body-font);
 }
 
 .today {
@@ -35,7 +33,7 @@
   margin-bottom: 10px;
   text-transform: capitalize;
   padding: 10px;
-    font-family: var(--body-font);
+  font-family: var(--body-font);
 }
 
 .todays-weather-description {
@@ -43,18 +41,15 @@
   bottom: 120px;
   right: -9px;
   font-size: 20px;
-   text-transform: capitalize;
-    font-family: var(--body-font);
-  
+  text-transform: capitalize;
+  font-family: var(--body-font);
 }
 
 canvas {
-  position:relative;
+  position: relative;
   bottom: 70px;
- padding-left: 1px;
+  padding-left: 1px;
 }
-
-
 
 ul.features {
   list-style: none;
@@ -62,16 +57,15 @@ ul.features {
 
   left: 300px;
   font-size: 17px;
-   font-family: var(--body-font);
+  font-family: var(--body-font);
 }
 
 #temp {
   list-style: none;
   display: inline-block;
   font-size: 20px;
-   font-family: var(--body-font);
+  font-family: var(--body-font);
   padding: 0 0 5px;
-  
 }
 
 .form-control {
@@ -80,17 +74,9 @@ ul.features {
   font-size: 20px;
 }
 
-.link {
-  color: var(--secondary-color);
-    font-family: var(--body-font);
-    text-shadow: 0.3px 0.3px 0 #a6a3a3;
-  padding-left: 20px;
-}
-
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
-
 }
 
 .btn-1 {
@@ -103,48 +89,42 @@ ul.features {
   width: 150px;
   box-shadow: 3px 4px 0 #4141416d;
   border-radius: 5px;
-   font-family: var(--body-font);
+  font-family: var(--body-font);
 }
 
 .card {
   border: solid 5px;
   border-color: var(--primary-color);
   border-radius: 50px;
-  
 }
 
 .city {
   font-size: 40px;
-   font-family: var(--body-font);
+  font-family: var(--body-font);
   text-align: right;
   padding: 20px;
   left: 300px;
-
 }
 .weather-forecast {
   position: relative;
   bottom: 50px;
   margin-top: -30px;
   text-align: center;
-   font-family: var(--body-font);
-  
+  font-family: var(--body-font);
 }
 
 #forecast-icon {
- position: relative; 
- bottom: -50px;
+  position: relative;
+  bottom: -50px;
   width: 60px;
- padding-left: 28px;
- 
+  padding-left: 28px;
 }
-
 
 .forecast-dates {
   position: relative;
   bottom: 40px;
-  color:black;
+  color: black;
   text-shadow: 0.3px 0.3px 0 #a6a3a3;
-  
 }
 
 .forecast-temp-min {
@@ -155,7 +135,17 @@ ul.features {
 
 .forecast-temp-max {
   font-size: smaller;
-  
+}
+
+.link {
+  color: var(--secondary-color);
+  font-family: var(--body-font);
+  text-shadow: 0.3px 0.3px 0 #a6a3a3;
+  padding-left: 20px;
+}
+
+.footer {
+  text-align: center;
 }
 
 .col-2 {
