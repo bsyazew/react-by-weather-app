@@ -4,7 +4,7 @@ import Weather from './Weather';
 
 function App() {
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 body">
       <div className="weather-app-wrapper">
         <div className="card">
           <div className="card-body">

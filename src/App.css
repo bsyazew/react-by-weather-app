@@ -1,13 +1,16 @@
 :root {
   --primary-color: #f09ae8;
+  --body-font: "Secular One", sans-serif;
+
 }
 
-body {
+.body {
   font-family: "Secular One", sans-serif;
 }
 
 .container {
   max-width: 700px;
+  
 }
 
 .degrees {
@@ -15,6 +18,7 @@ body {
   bottom: 150px;
   left: 90px;
   font-size: 60px;
+  font-family: var(--body-font);
 }
 
 .deg-celsius {
@@ -22,12 +26,15 @@ body {
   bottom: 190px;
   left: 90px;
   font-size: 20px;
+    font-family: var(--body-font);
 }
 
 .today {
   font-size: 20px;
+  margin-bottom: 10px;
   text-transform: capitalize;
   padding: 10px;
+    font-family: var(--body-font);
 }
 
 .todays-weather-description {
@@ -36,13 +43,15 @@ body {
   right: -9px;
   font-size: 20px;
    text-transform: capitalize;
+    font-family: var(--body-font);
   
 }
 
 canvas {
   position:relative;
-  bottom: 66px;
+  bottom: 70px;
   right: -10px;
+  
  
 }
 
@@ -54,13 +63,16 @@ ul.features {
 
   left: 300px;
   font-size: 17px;
+   font-family: var(--body-font);
 }
 
 #temp {
   list-style: none;
   display: inline-block;
   font-size: 20px;
+   font-family: var(--body-font);
   padding: 0 0 5px;
+  
 }
 
 .form-control {
@@ -71,12 +83,16 @@ ul.features {
 
 .link {
   color: var(--primary-color);
+    font-family: var(--body-font);
   padding-left: 20px;
 }
 
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+ border: solid 5px;
+  border-color: var(--primary-color);
+  border-radius: 50px;
 }
 
 .btn-1 {
@@ -89,39 +105,46 @@ ul.features {
   width: 150px;
   box-shadow: 3px 4px 0 #4141416d;
   border-radius: 5px;
+   font-family: var(--body-font);
 }
 
-.card {
-  padding: 30px;
-  border: solid 5px;
-  border-color: var(--primary-color);
-  border-radius: 50px;
+.card-body {
+ border: none;
+  
 }
 
 .city {
   font-size: 40px;
+   font-family: var(--body-font);
   text-align: right;
   padding: 20px;
   left: 300px;
+
 }
 .weather-forecast {
   position: relative;
   bottom: 50px;
   margin-top: -30px;
   text-align: center;
+   font-family: var(--body-font);
   
 }
 
 #forecast-icon {
-  
+ position: relative; 
+ bottom: -50px;
   width: 60px;
+  
  
 }
 
 
 .forecast-dates {
-  color: var(--primary-color);
+  position: relative;
+  bottom: 40px;
+  color:black;
   text-shadow: 0.3px 0.3px 0 #020202;
+  
 }
 
 .forecast-temp-min {
@@ -132,6 +155,7 @@ ul.features {
 
 .forecast-temp-max {
   font-size: smaller;
+  
 }
 
 .col-2 {

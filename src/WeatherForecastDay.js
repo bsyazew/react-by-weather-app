@@ -24,7 +24,7 @@ function day() {
     <div>
       {" "}
       <div className="forecast-dates">{day()}</div>{" "}
-      <WeatherIcon code={props.data.weather[0].icon} size={35} />{" "}
+      <div id="forecast-icon"><WeatherIcon code={props.data.weather[0].icon} size={40} /></div>{" "}
       <div>
         <span className="forecast-temp-max">
           {maxTemp()}
