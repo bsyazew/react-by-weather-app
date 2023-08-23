@@ -22,6 +22,8 @@ function day() {
 
   return (
     <div>
+      <div className="row">
+        <div className="col-md">
       {" "}
       <div className="forecast-dates">{day()}</div>{" "}
       <div id="forecast-icon"><WeatherIcon code={props.data.weather[0].icon} size={40} /></div>{" "}
@@ -33,6 +35,8 @@ function day() {
           {minTemp()}
         </span>
       </div>
+    </div>
+    </div>
     </div>
   );
 }
