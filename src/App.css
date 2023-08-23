@@ -154,27 +154,16 @@ ul.features {
 }
 
 @media (max-width: 786px) {
-  .body {
-    max-width: 100%;
-  }
-
   ul.features {
     list-style: none;
     position: relative;
-    left: 200px;
+    left: 150px;
     font-size: 14px;
     font-family: var(--body-font);
   }
 
-  .deg-celsius {
-    font-size: 15px;
-  }
-  .degrees {
-    font-size: 50px;
-  }
   .today {
     font-size: 15px;
-    margin-bottom: 15px;
   }
 
   .todays-weather-description {
@@ -185,16 +174,51 @@ ul.features {
     padding: 10px;
   }
   .btn-1 {
-    width: 90px;
+    width: 80px;
     box-shadow: 3px 4px 0 #4141416d;
     border-radius: 5px;
   }
 
-  .weather-forecast {
-    position: relative;
-    bottom: 50px;
-    margin-top: -30px;
+  #forecast-icon {
+    width: 40px;
+    right: 25px;
+  }
+  .forecast-temp-max {
+    font-size: 13px;
+  }
+  .forecast-temp-min {
+    font-size: 13px;
+  }
+  .forecast-dates {
     text-align: center;
-    font-family: var(--body-font);
+    font-size: 11px;
+  }
+  #icon {
+    width: 90px;
+  }
+  .degrees {
+    font-size: 50px;
+
+    left: 90px;
+  }
+  .deg-celsius {
+    font-size: 15px;
+    left: 90px;
+  }
+  .today {
+    margin-top: 20px;
+  }
+
+  .btn-1 {
+    font-size: 10px;
+    max-width: 70px;
+  }
+
+  #city-input {
+    font-size: 12px;
+  }
+
+  #search {
+    font-size: 12px;
   }
 }

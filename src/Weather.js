@@ -20,22 +20,20 @@ export default function Weather(props) {
       icon: response.data.weather[0].icon,
     });
   }
-function search(){
- const apiKey = "f5e814a04eddfab1740f07bf0328eee2";
+  function search() {
+    const apiKey = "f5e814a04eddfab1740f07bf0328eee2";
 
- let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
- axios.get(apiUrl).then(handleResponse);
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
 
-
-}
-
-function handleSubmit(event) {
-  event.preventDefault();
-  search();
-}
-function handleCitychange(event) {
-setCity(event.target.value);
-}
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+  function handleCitychange(event) {
+    setCity(event.target.value);
+  }
 
   if (weatherData.ready) {
     return (
@@ -55,7 +53,11 @@ setCity(event.target.value);
                     onChange={handleCitychange}
                   />
                   <div className="col-3">
-                    <button type="sbumit" className="btn btn-dark btn-1">
+                    <button
+                      type="sbumit"
+                      className="btn btn-dark btn-1"
+                      id="search"
+                    >
                       Search
                     </button>
                   </div>
@@ -65,7 +67,7 @@ setCity(event.target.value);
           </div>
         </div>
         <WeatherInfo data={weatherData} size={64} />
-        <WeatherForecast coords={weatherData.coords}/>
+        <WeatherForecast coords={weatherData.coords} />
       </div>
     );
   } else {
